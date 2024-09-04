@@ -62,14 +62,14 @@ input.password{
 
 input.submit{
     color: #FFF;
-    background-color: #ba00f866;
     margin-left: 5%;
     width: 90%;
     cursor: pointer;
+    background: linear-gradient(#ba00f866,#9f3ac166);
 }
 
 input.submit:hover{
-    background-color: rgb(255, 255, 255);
+    background: #ffffff;
     color: #ba00f866;
     font-weight: bold;
 }
