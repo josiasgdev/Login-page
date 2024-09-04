@@ -74,6 +74,15 @@ input.submit:hover{
     font-weight: bold;
 }
 
+p{
+    font-size: 0.7rem;
+    text-align: center;
+}
+p a{
+    color:#FFF;
+    text-decoration:underline;
+}
+
 ::placeholder {
     padding-left: 2px;
     font-size: 0.7rem;
