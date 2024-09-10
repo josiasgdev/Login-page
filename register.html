@@ -8,11 +8,11 @@
   </head>
   <body>
     <div id="container">
-      <div id="box">
-        <form action="register.html" method="post" class="form">
+      <div id="box" class="RegisterBox">
+        <form action="" method="post" class="form">
             <h1>Jorkut</h1>
             <fieldset>
-                <legend> Login do usuário</legend>
+                <legend> Registro do usuário</legend>
                
             <div>
                 <label for="name">
@@ -21,15 +21,27 @@
                 </label>  
             </div>
             <div>
+              <label for="email">
+                  E-mail:<br />
+                  <input type="email" class="email" placeholder="Insira seu E-mail">
+              </label>  
+          </div>
+            <div>
                 <label for="password">
                     Senha: <br />
                     <input type="password" class="password" placeholder="Insira sua senha">
                 </label>  
             </div>
             <div>
-                <br><a href="register.html"><input type="submit" class="submit" value="Entrar"></a>
+              <label for="password">
+                  Senha: <br />
+                  <input type="password" class="password" placeholder="Repita sua senha">
+              </label>  
+          </div>
+            <div>
+                <br><input type="submit" class="submit" value="Entrar" >
             </div>
-            <p>Não possui conta? <a href="">Inscreva-se</a></p>
+            
         </fieldset>
         </form>
       </div>

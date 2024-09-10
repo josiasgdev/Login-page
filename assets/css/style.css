@@ -21,7 +21,10 @@ body {
   color: #ffffff;
   box-shadow: 5px 5px 20px rgba(158, 158, 158, 0.8);
   
-  
+}
+
+#box.RegisterBox{
+    height: 400px;
 }
 
 #box h1 {
@@ -58,6 +61,10 @@ input.user{
 
 input.password{
     background-image: url(/assets/images/icone-cadeado.png);
+}
+
+input.email{
+    background-image: url(/assets/images/email.png);
 }
 
 input.submit{
