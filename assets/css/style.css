@@ -1,9 +1,10 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-  }
-
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  height: 100%;
+}
+/*Containers principais*/
 #container {
   width: 100vw;
   height: 100vh;
@@ -13,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #box {
   width: 400px;
   height: 300px;
@@ -20,77 +22,235 @@ body {
   border-radius: 10px;
   color: #ffffff;
   box-shadow: 5px 5px 20px rgba(158, 158, 158, 0.8);
-  
-}
-
-#box.RegisterBox{
-    height: 400px;
 }
 
 #box h1 {
-    text-align: center;
-}
- form{
-    padding: auto;
-    margin: auto;
-}
- fieldset{
-    margin: auto;
-    width: 65%;
-    border-color: hsla(0, 0%, 100%, 0.597);
-    border-radius: 8px;    
+  text-align: center;
 }
 
+/*Home Page*/
+#container.homepage {
+  justify-content: left;
+}
+
+#box.HomeSideBox {
+  width: 20%;
+  height:100%;
+  border-radius: 0px 10px 10px 0px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.homepage p {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+#box img#ProfileImage {
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+  position: relative;
+}
+
+#content{
+    width: 75%;
+    height: 100%;
+}
+
+#content div {
+    background: rgb(177, 177, 84);
+    width: 800px;
+    height: 31%;
+    margin: 12px;
+}
+
+/*Register Page*/
+#box.RegisterBox {
+  height: 400px; /*Register page*/
+}
+
+/*Formulário início*/
+form {
+  padding: auto;
+  margin: auto;
+}
+fieldset {
+  margin: auto;
+  width: 65%;
+  border-color: hsla(0, 0%, 100%, 0.597);
+  border-radius: 8px;
+}
 
 input {
-    height: 20px;
-    width: 90%;
-    border-radius: 2px;
-    font-style: italic;
-    padding-left: 20px;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: 8px;
-    background-size: 10px;
-    
+  height: 20px;
+  width: 90%;
+  border-radius: 2px;
+  font-style: italic;
+  padding-left: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 8px;
+  background-size: 10px;
 }
 
-input.user{
-    background-image: url(/assets/images/icone-usuario.png);
+input.user {
+  background-image: url(/assets/images/icone-usuario.png);
 }
 
-input.password{
-    background-image: url(/assets/images/icone-cadeado.png);
+input.password {
+  background-image: url(/assets/images/icone-cadeado.png);
 }
 
-input.email{
-    background-image: url(/assets/images/email.png);
+input.email {
+  background-image: url(/assets/images/email.png);
 }
 
-input.submit{
-    color: #FFF;
-    margin-left: 5%;
-    width: 90%;
-    cursor: pointer;
-    background: linear-gradient(#ba00f866,#9f3ac166);
+input.submit {
+  color: #fff;
+  margin-left: 5%;
+  width: 90%;
+  cursor: pointer;
+  background: linear-gradient(#ba00f866, #9f3ac166);
 }
 
-input.submit:hover{
-    background: #ffffff;
-    color: #ba00f866;
-    font-weight: bold;
-}
-
-p{
-    font-size: 0.7rem;
-    text-align: center;
-}
-p a{
-    color:#FFF;
-    text-decoration:underline;
+input.submit:hover {
+  background: #ffffff;
+  color: #ba00f866;
+  font-weight: bold;
 }
 
 ::placeholder {
-    padding-left: 2px;
-    font-size: 0.7rem;
-  }
+  padding-left: 2px;
+  font-size: 0.7rem;
+}
+/*Formulário Fim*/
+
+/*Login Page*/
+
+form {
+  padding: auto;
+  margin: auto;
+}
+fieldset {
+  margin: auto;
+  width: 65%;
+  border-color: hsla(0, 0%, 100%, 0.597);
+  border-radius: 8px;
+}
+
+input {
+  height: 20px;
+  width: 90%;
+  border-radius: 2px;
+  font-style: italic;
+  padding-left: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 8px;
+  background-size: 10px;
+}
+
+input.user {
+  background-image: url(/assets/images/icone-usuario.png);
+}
+
+input.password {
+  background-image: url(/assets/images/icone-cadeado.png);
+}
+
+input.submit {
+  color: #fff;
+  margin-left: 5%;
+  width: 90%;
+  cursor: pointer;
+  background: linear-gradient(#ba00f866, #9f3ac166);
+}
+
+input.submit:hover {
+  background: #ffffff;
+  color: #ba00f866;
+  font-weight: bold;
+}
+
+::placeholder {
+  padding-left: 2px;
+  font-size: 0.7rem;
+}
+
+.LoginPage p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.LoginPage a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*Register Page*/
+
+form {
+  padding: auto;
+  margin: auto;
+}
+fieldset {
+  margin: auto;
+  width: 65%;
+  border-color: hsla(0, 0%, 100%, 0.597);
+  border-radius: 8px;
+}
+
+input {
+  height: 20px;
+  width: 90%;
+  border-radius: 2px;
+  font-style: italic;
+  padding-left: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 8px;
+  background-size: 10px;
+}
+
+input.user {
+  background-image: url(/assets/images/icone-usuario.png);
+}
+
+input.password {
+  background-image: url(/assets/images/icone-cadeado.png);
+}
+
+input.email {
+  background-image: url(/assets/images/email.png);
+}
+
+input.submit {
+  color: #fff;
+  margin-left: 5%;
+  width: 90%;
+  cursor: pointer;
+  background: linear-gradient(#ba00f866, #9f3ac166);
+}
+
+input.submit:hover {
+  background: #ffffff;
+  color: #ba00f866;
+  font-weight: bold;
+}
+
+::placeholder {
+  padding-left: 2px;
+  font-size: 0.7rem;
+}
+
+p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+p a {
+  color: #fff;
+  text-decoration: underline;
+}
